@@ -1,6 +1,6 @@
 jQuery-GUI-Gallery-Plugin
 =========================
-
+<pre>
 Need a fast loading jQuery lightbox plugin that supports videos, pictures, popover content, iframes with social media sharing? Well give this plugin a try.
 
 This plugin was inspired by lightbox and prettyphoto. Most of the plugin is written mostly in native javascript and is upto 20 times faster that the PrettyPhoto and Lightbox plugins.
@@ -33,16 +33,14 @@ How to use :
 2. Inside you find two folders : images & css - Please note you need to keep the same folder structure as the UI buttons are created from a sprite located in the "images" folder
 3. Insert the css stylesheet in the head of your webpage :
 
-<link rel="stylesheet" href="path/to/jquery.gui-gallery.min.css">
+&lt;link rel="stylesheet" href="path/to/jquery.gui-gallery.min.css"&gt;
 
-4. In order to load the plugin you need to first load jQuery on your webpage :
-
-Insert the following jQuery Library script tag anywhere in your document before including the plugin script.
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+4. In order to load the plugin you need to first load jQuery on your webpage : Insert the following jQuery Library script tag anywhere in your document before including the plugin script.
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
 
 5. You can put the plugin javascript file in any folder you like then include it in your webpage after the jQuery Library script :
 
-<script type="text/javascript" src="path/to/jquery.gui-gallery.min.js"></script>
+&lt;script type="text/javascript" src="path/to/jquery.gui-gallery.min.js"&gt;&lt;/script&gt;
 
 6. Initialise the plugin by either placing the following code in an external .js file or directly on your webpage :
 
@@ -62,7 +60,8 @@ jQuery(function($){
 });
 
 For inline use directly on your webpage .js file :
-<script type="text/javascript">
+
+&lt;script type="text/javascript"&gt;
 jQuery(function($){	
 	$('.thumb').guiGallery({
 		action 				: "click", // @param string - must be either "click", "mouseenter", "mouseleave", "focus", "blur" etc
@@ -76,38 +75,46 @@ jQuery(function($){
 		enableSharing 		: true	   // @param boolean - true / false - enable social media sharing of image - default is true
 	});
 });
-</script>
-
+&lt;/script&gt;
+<
 This plugin is extremely performant and fast loading and utilised clever DOM manipulation
 
 Parameters : 
 ============
 action - string - eg: "click" - choose an action which will trigger the image/video/iframe/content to be rendered
+
 open - function() {  /* place your custom functions here */ } - this function fires when the gallery first opens
+
 close - function() {  /* place your custom functions here */ } - this function fires when the gallery has closed and all gallery event handlers have been removed
+
 beforeChange - function() {  /* place your custom functions here */ } - this function fires once before each new gallery item is loaded
+
 afterChange - beforeChange - function() {  /* place your custom functions here */ } - this function fires once after each new gallery item is loaded
+
 enableAutoPlay - true or false - renders the autoplay button so users can view gallery as a slideshow
+
 enableExpand - true or false - renders the expand button so users expand the image to a larger size ( this only works if original image was larger than the browser viewport)
+
 autoplaySpeed - integer - eg: 3000 - time between slideshow changing content
+
 enableSharing - ture or false - renders social media share buttons
 
 HTML markup :
 ===========
 
 Basic Usage :
-<a href="path/to/fullsize_image/or/iframe/or/video/iframe" class="whatever-you-like"><img src="/path/to/thumbnail" alt=""></a>
+&lt;a href="path/to/fullsize_image/or/iframe/or/video/iframe" class="whatever-you-like"&gt;&lt;img src="/path/to/thumbnail" alt=""&gt;&lt;/a&gt;
 
 If the thumbnail image has an Alt it will be used for the title of the popover window.
 
-You can override this by adding an attribute (data-title="title you want to display") to the <a> tag. For example :
+You can override this by adding an attribute (data-title="title you want to display") to the &lt;a&gt; tag. For example :
 
-<a href="path/to/fullsize_image/or/iframe/or/video/iframe" data-title="title you want to display" class="whatever-you-like"><img src="/path/to/thumbnail" alt=""></a>
+&lt;a href="path/to/fullsize_image/or/iframe/or/video/iframe" data-title="title you want to display" class="whatever-you-like"&gt;&lt;img src="/path/to/thumbnail" alt=""&gt;&lt;/a&gt;
 
 Advanced Usage:
-You can add HTML markup to be displayed in the gallery next to the relevant item by add an attribue (data-content="html markup") to the <a> tag. For example:
+You can add HTML markup to be displayed in the gallery next to the relevant item by add an attribue (data-content="html markup") to the &lt;a&gt; tag. For example:
 
-<a href="path/to/fullsize_image/or/iframe/or/video/iframe" data-content="<h1>Test</h1> <p>This a dummy content</p>" data-title="title you want to display" class="whatever-you-like"><img src="/path/to/thumbnail" alt=""></a>
+&lt;a href="path/to/fullsize_image/or/iframe/or/video/iframe" data-content="&lt;h1&gt;Test&lt;/h1&gt; &lt;p&gt;This a dummy content&lt;/p&gt;" data-title="title you want to display" class="whatever-you-like"&gt;&lt;img src="/path/to/thumbnail" alt=""&gt;&lt;/a&gt;
 
 
 This plugin can be edited and freely distributed. But please leave the headers on the css and js files.
@@ -115,3 +122,4 @@ This plugin can be edited and freely distributed. But please leave the headers o
 Fork me if you like this plugin. Drop me a line if there are any features you would like include that the plugin currently doesn't have.
 
 ENJOY!!
+</pre>
