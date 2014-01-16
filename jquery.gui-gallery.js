@@ -598,13 +598,13 @@
 
 	// default options
 	$.fn.guiGallery.defaults = {
-		action 				: "click", // @param string - must be either "click", "mouseenter", "mouseleave", "focus", "blur"
+		action 				: "click", // @param string - must be either "click", "mouseenter", "mouseleave", "focus", "blur" etc - default is "click"
 		open 				: $.noop,  // @param function - must be an anonymous function e.g. function() { #code here }, fires only once (when the popover has fully loaded)
 		close 				: $.noop,  // @param function - must be an anonymous function e.g. function() { #code here }, fires only once (when popover is closed)
 		beforeChange 		: $.noop,  // @param function - must be an anonymous function e.g. function() { #code here }, fires once everytime before the slide changes
 		afterChange 		: $.noop,  // @param function - must be an anonymous function e.g. function() { #code here }, fires once everytime after the slide changes
 		enableAutoplay 		: true,	   // @param boolean - true / false
-		autoplaySpeed 		: 2500,	   // @param integer - speed of auto play in milliseconds - 3500 is default - minimum of 2000
+		autoplaySpeed 		: 2500,	   // @param integer - speed of auto play in milliseconds - 2500 is default - minimum of 2000
 		enableExpand 		: true,	   // @param boolean - true / false - enable expand buttons for images larger than viewport 
 		enableSharing 		: true	   // @param boolean - true / false - enable social media sharing of image
 	};

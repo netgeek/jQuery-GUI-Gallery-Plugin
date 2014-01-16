@@ -1,4 +1,15 @@
-/* reset */
+/*!
+ *
+ * GUI Gallery Overlay - supports images/videos/iframes
+ * @version 3.6
+ * @author Mario McBean
+ * @url http://www.devgit.eu/
+ * @requirements jQuery 1.9 or higher
+ * @copyright 2014 DevGit.eu
+ * Released under the MIT license
+ *
+ */
+ /* reset */
 .gui-overlay-content,
 .gui-overlay-content *,
 .gui-loading {
